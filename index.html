@@ -16,25 +16,27 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      animation: fadeIn 2s ease-in;
+      animation: fadeIn 2.5s ease-in;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+
     h1 {
-      font-size: 2.5em;
-      letter-spacing: 2px;
+      font-size: 2.2em;
+      margin-bottom: 10px;
       text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: glow 2.8s ease-in-out infinite alternate;
     }
+
     p {
-      font-size: 1.2em;
       color: #bfbfbf;
       margin-top: 10px;
+      font-size: 1.1em;
     }
+
     .links {
-      margin-top: 30px;
+      margin-top: 35px;
     }
+
     a {
       color: #fff;
       text-decoration: none;
@@ -44,18 +46,41 @@
       border-radius: 5px;
       transition: 0.3s;
     }
+
     a:hover {
       background-color: #fff;
       color: #000;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #777;
+      font-style: italic;
+      animation: fadeIn 3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff; }
+      to { text-shadow: 0 0 20px #fff, 0 0 30px #999; }
     }
   </style>
 </head>
 <body>
   <h1>Be Unreadable Manifest</h1>
   <p>Coming Soon</p>
+
   <div class="links">
-    <a href="https://www.instagram.com/lovasvictor?igsh=YzI2Mmh5emo2a2I1&utm_source=qr">Instagram</a>
-    <a href="https://www.linkedin.com/in/viktor-lovas-980157397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+    <a href="https://www.instagram.com/lovasvictor" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/viktor-lovas-980157397" target="_blank">LinkedIn</a>
   </div>
+
+  <footer>“Be Unreadable is not a slogan. It’s a warning.”</footer>
 </body>
 </html>
